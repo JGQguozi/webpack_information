@@ -63,5 +63,11 @@ module.exports = {
       filename: 'css/built.css'
     })
   ],
-  mode: 'development'
+  mode: 'development',
+  devServer: {
+    contentBase: resolve(__dirname, 'build'),
+    compress: true,
+    port: 3000,
+    open: true
+  }
 };
